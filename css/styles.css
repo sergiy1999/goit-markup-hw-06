@@ -501,9 +501,10 @@ overflow: hidden;
 
 .portfolio-conteiner:hover{
     transform: translateY(0%); 
-}
+} 
 
-.portfolio-text-next{
+ .portfolio-text-next{
+    display: none;
     position: absolute;
     top: 0%;
     font-size: 16px;
@@ -1089,6 +1090,11 @@ margin:auto;
         padding-right: 15px;
     }
 
+    .address-header{
+        flex-direction: initial;
+        gap: 40px;
+    }
+
     .hero{
        padding-top: 188px;
       padding-bottom: 188px;
@@ -1162,11 +1168,15 @@ margin:auto;
     }
 
     .title-list{
-        width: auto;
-     }
+        width: 360px;
+    }
 
     .header-nav{
         justify-content: flex-start;
+    }
+
+    .portfolio-text-next{
+        display: block;
     }
 
     .logo{
