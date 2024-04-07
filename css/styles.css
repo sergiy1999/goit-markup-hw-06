@@ -75,7 +75,7 @@ align-items: center;
     color: #4d5ae5;
     /* margin-right: 76px; */
     text-align: center;
-    margin: 16px;
+    /* margin: 16px; */
     margin-left: auto;
 }
 
@@ -169,8 +169,11 @@ margin-right:0;
     line-height: 2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.mob-list-item{
+    margin: 24px 0;
 }
 
 .mob-link:hover,
@@ -200,10 +203,6 @@ margin-right:0;
   background-color: ;
 }
 
-.address-mob{
-    margin-top: 40px;
-}
-
 .address-link-mob:hover,
 .address-link-mob:focus{
     color: #4D5AE5;
@@ -228,7 +227,6 @@ margin-right:0;
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 8px;
 }
 
 .mob-icon{
@@ -318,8 +316,8 @@ margin-right:0;
   }
 
 .info{
-    padding-top: 168px;
-    padding-bottom: 168px;
+    padding-top: 96px;
+    padding-bottom: 96px;
  /* padding-top: 120px;
  padding-bottom: 120px; */
 }
@@ -664,10 +662,11 @@ overflow: hidden;
     display: flex;
     gap: 24px;
     flex-direction: column;
+    align-items: center;
 }
 
 .register-btn{
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -949,6 +948,11 @@ margin:auto;
        text-align: center; 
     }
 
+    .address-link {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
     .info{
         padding-top: 96px;
         padding-bottom: 96px;
@@ -962,6 +966,11 @@ margin:auto;
         flex-wrap: wrap;
 
     } 
+
+    .team-link{
+        gap: 64px 24px;
+    }
+
     .text-list-strenghts{
         flex-basis: initial;
         width: 100%;
@@ -970,7 +979,8 @@ margin:auto;
     }
     .text-list-name-info{
         text-align: left;
-        font-size: 20px;
+        font-size: 36px;
+        l
     }
 
     .portfolio-list{
@@ -1004,7 +1014,7 @@ margin:auto;
    .address-header{
     display:flex;
     flex-direction: column;
-    gap: 0;
+    gap: 12px;
     justify-content: flex-end;
   
    }
@@ -1033,8 +1043,8 @@ margin:auto;
   }
 
   .header-nav{
-    flex-grow: 2;
-    justify-content: space-around;
+    flex-grow: 1;
+    justify-content: space-between;
   }
 
   .logo{
@@ -1186,6 +1196,8 @@ margin:auto;
     .general{
         flex-direction: row;
         max-width: 1158px ;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .modal{
