@@ -1105,6 +1105,17 @@ margin:auto;
         gap: 40px;
     }
 
+    .address-link{
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    .address-nav{
+        flex-grow: initial;
+    }
+
     .hero{
        padding-top: 188px;
       padding-bottom: 188px;
@@ -1137,6 +1148,10 @@ margin:auto;
         width: 264px;
             flex-basis: calc((100% - 3 * 24px) / 4);
 
+    }
+
+    .text-list-name-info{
+        font-size: 20px;
     }
 
     .item{
