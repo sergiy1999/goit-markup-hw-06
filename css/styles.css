@@ -166,15 +166,19 @@ margin-right:0;
 .mob-link{
     font-weight: 700;
     font-size: 36px;
-    line-height: 2;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.mob-list-item{
-    margin: 24px 0;
+.mob-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+
+
 
 .mob-link:hover,
 .mob-link:focus{
@@ -200,7 +204,7 @@ margin-right:0;
 
 .mob-close:hover,
 .mob-close:focus{
-  background-color: ;
+  background-color: #E7E9FC;
 }
 
 .address-link-mob:hover,
@@ -554,10 +558,10 @@ overflow: hidden;
     }
 
 .footer-subname{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
     /* margin-right: 120px; */
 }
 
@@ -570,7 +574,9 @@ overflow: hidden;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center; 
 }
 
 .logo-footer {
@@ -584,11 +590,11 @@ overflow: hidden;
 }
 
 .social-conteiner{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     margin: 72px auto;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .footrer-name-list{
@@ -606,6 +612,7 @@ overflow: hidden;
 .footer-list{
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .footer-link{
@@ -634,9 +641,9 @@ overflow: hidden;
 }
 
 .modal{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     width: 100%;
 }
 
@@ -980,12 +987,12 @@ margin:auto;
     .text-list-name-info{
         text-align: left;
         font-size: 36px;
-        l
     }
 
     .portfolio-list{
         justify-content: space-between;
     }
+
     .title-list{
         width: 48%;
     }
@@ -1016,7 +1023,6 @@ margin:auto;
     flex-direction: column;
     gap: 12px;
     justify-content: flex-end;
-  
    }
 
    .address-nav{
@@ -1053,7 +1059,7 @@ margin:auto;
 
   .footer-logo-social-wrapper{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
   }
 
@@ -1068,12 +1074,17 @@ margin:auto;
     margin-right: 24px;
   }
 
+  .logo-part-footer{
+    text-align: left;
+  }
+
   .text-footer{
     margin-left: 0;
   }
 
   .footrer-name-list{
     text-align: left;
+    line-height: 1.3;
   }
 
   .modal{
@@ -1088,6 +1099,7 @@ margin:auto;
 
   .subscribe{
     text-align: left;
+    line-height: 1.3;
   }
 
 }
@@ -1120,7 +1132,6 @@ margin:auto;
        padding-top: 188px;
       padding-bottom: 188px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); 
-
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -1230,8 +1241,14 @@ margin:auto;
 
     .text-footer{
         width: 264px;
-    }
+    }    
 
+}
+
+@media screen and ( min-width: 1280px){
     
-
+    .hero{
+        background-size: 100% 100% ;
+    }
+    
 }
